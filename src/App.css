@@ -1,3 +1,131 @@
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 700px;
+}
+
+.menu {
+  width: 300px;
+  padding: 5px;
+  margin: 10px 0 0 10px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  background-color: rgba(150, 150, 150, 0.2);
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu > p {
+  margin: 3px 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2em;
   text-align: center;
+}
+
+.mode {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mode > input {
+  margin: 0;
+  padding: 0;
+}
+
+.mode > label {
+  flex-grow: 1;
+  font-size: 15px;
+  padding: 5px 0 3px 10px;
+  margin: 0;
+}
+
+label.active {
+  text-shadow: 0 0 1px black;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px; 
+}
+
+.game {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 7px gray;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  border: 1px solid black;
+  background-color: rgba(150, 150, 150, 0.2);
+  text-shadow: 0 0 2px black;
+}
+
+.square:hover {
+  background-color: rgba(150, 150, 150, 0.4);
+  cursor: pointer;
+}
+
+.restart {
+  width: 120px;
+  margin-top: 8px;
+  font-weight: 700;
+  border: 1px solid black;
+  background-color: transparent;
+  margin-bottom: 5px;
+}
+
+.restart:hover,
+.restart:active {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.restart:active {
+  transform: scale(0.9);
+}
+
+.status {
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.history {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  text-align: center;
+}
+
+.history > p {
+  margin: 10px 0 5px 0;
+  text-decoration: underline;
+}
+
+.history button {
+  width: 130px;
+  margin-bottom: 3px;
+  cursor: pointer;
 }
